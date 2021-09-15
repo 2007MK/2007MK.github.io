@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Zen+Loop&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+html {
+  background: url("https://images.pexels.com/photos/1252869/pexels-photo-1252869.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
+    no-repeat center center fixed;
+  background-size: cover;
+  height: 100%;
+}
+
+body {
+  background: transparent;
+  height: 100%;
+}
+
+.wrap {
+  /* OLD browser support */
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  -moz-box-wrap: nowrap;
+  -webkit-box-wrap: nowrap;
+  -ms-flexbox-wrap: nowrap;
+  -moz-box-direction: column;
+  -webkit-box-direction: column;
+  -ms-flexbox-direction: column;
+  /* END OLD browser support */
+
+  display: flex; /* or inline-flex */
+  flex-direction: column; /* or usually or row */
+  justify-content: space-between;
+  align-items: center;
+
+  height: 100%;
+  width: 100%;
+}
+
+.logo {
+  -ms-transform: rotate(-3deg); /* IE 9 */
+  -webkit-transform: rotate(-3deg); /* Safari */
+  transform: rotate(-3deg);
+  padding-top: 20px;
+}
+
+.logo a {
+  /* Google font: https://www.google.com/fonts/specimen/Kaushan+Script */
+  font-family: "Kaushan Script", cursive;
+  color: yellow;
+  font-size: 36px;
+  padding: 10px;
+  opacity: 0.75;
+}
+
+.logo a .logo-alt {
+  color: skyblue;
+  font-size: 24px;
+}
+
+.logo a:hover,
+.logo a:focus {
+  text-decoration: none;
+  opacity: 1;
+}
+
+h1 {
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 600px;
+  color: white;
+  opacity: 100;
+  font-family: "Staatliches", cursive;
+}
+
+p {
+  margin: 0;
+}
+
+#countdown {
+  color: white;
+  display: flex;
+  max-width: 360px;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+#countdown .countdown-section {
+  padding: 0 15px;
+  border-right: 1px solid rgba(255, 255, 255, 0.36);
+}
+
+#countdown .countdown-section:last-child {
+  border-right: 0;
+}
+
+#countdown .countdown-section .h1 {
+  opacity: 0.75;
+}
+
+#countdown .countdown-section .text-center {
+  color: white;
+  opacity: 1;
+}
+.site-footer {
+  color: #fff;
+  font-size: 0.875em; /* 14px */
+}
+
+a {
+  color: #ff3399;
+  text-decoration: none;
+}
